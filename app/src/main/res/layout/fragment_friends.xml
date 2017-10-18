@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+
+
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        app:titleBarLeftImage="@drawable/ease_mm_title_back"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ease_blue_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp" />
+    </com.hyphenate.easeui.widget.EaseTitleBar>
+
+
+
+    <com.hyphenate.easeui.widget.EaseContactList
+        android:id="@+id/friends_listview"
+        ctsListInitialLetterBg="#abc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.hyphenate.easeui.widget.EaseContactList>
+
+</LinearLayout>
